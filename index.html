@@ -142,6 +142,18 @@ if(localStorage["index"]=="1"){window.location="#"}$(document).ready(function(e)
 <source src="/sorry/music/theme.mp3"  />
 <embed id="main_audio_ie8" hidden="true" autostart="true" height="0" width=0 loop="true" src="我一次次的更加确定，你就是我一直等待的人" autoplay="autoplay"/>
 </audio>
+<button onclick="toggleMusic()">停止/继续播放音乐</button>
+    
+    <script>
+        function toggleMusic() {
+            var audio = document.getElementById('bgMusic');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
 </div>
 <div style="display:none"></div></body>
 </html>
