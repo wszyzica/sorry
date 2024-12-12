@@ -12,7 +12,8 @@
 <style type="text/css">
 body{text-align:center;margin:0px;padding:0px;font-size:25px;color:#FFF;font-family:"微软雅黑";background:#f3961c;}div{text-align:left;}.tittle{width:100%;background:#f3961c;top:0px;height:100%;z-index:0;position:absolute;position:fixed !important;display:none;cursor:default;}.big{font-family:"微软雅黑";color:#FFF;font-size:35px;}.tishi{position:absolute;position:fixed !important;z-index:99;bottom:10px;width:100%;text-align:center;}.tishiContent{border:1px solid #FFF;font-size:18px;padding:5px;cursor:pointer;border-radius:5px;}
 </style>
-<script type="text/javascript" src="/page/biaobai_jianyuechengse/js/jquery.min.js"></script>
+<script type="text/javascript" src=/js
+/jquery.min.js"></script>
 <script>
 if(localStorage["index"]=="1"){window.location="#"}$(document).ready(function(e){$(document).scrollTop(300);timer=setInterval("$.change()",6000);t=1;$("#t-"+t).fadeIn();$(document).click(function(){clearInterval(timer);$.change()});$.change=function(){t++;if(t<=$(".tittle").length){$(".tittle").slideUp(1500).fadeOut();$("#t-"+t).slideDown(1500).fadeIn()}}});
 </script>
